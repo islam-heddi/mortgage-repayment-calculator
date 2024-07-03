@@ -1,0 +1,110 @@
+@font-face {
+    font-family: plusjakarta;
+    src: url(./fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: plusjakarta;
+}
+
+body{
+    background-color: hsl(202, 86%, 94%);
+}
+
+main{
+    background-color: white;
+    padding: 0;
+    display:inline-flex;
+    gap: 20px;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.calc{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 18px;
+    border-radius: 36px;
+    border: 1px white solid;
+    background-color: hsl(61, 70%, 52%);
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+button:hover{
+    background-color: hsla(61, 70%, 52%, 0.569);
+}
+
+input{
+    padding: 12px;
+}
+
+.rse{
+    background-color: hsl(61, 70%, 52%);
+    cursor:pointer;
+}
+
+.selec{
+    padding: 12px;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+
+.clr{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clr:hover{
+    color: hsl(70, 100%, 68%);
+}
+
+.rse{
+    accent-color: hsl(61, 70%, 52%);
+}
+
+.selec:hover{
+    background-color: hsla(61, 70%, 52%, 0.445);
+    border-color: hsl(61, 70%, 52%);
+}
+
+.tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.result{
+    max-width: 360px;
+    background-color: rgb(7, 7, 72);
+    color: white;
+    padding: 12px;
+    margin: 0px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
