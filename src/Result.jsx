@@ -1,19 +1,30 @@
-
+import emptyBusiness from './assets/images/illustration-empty.svg'
 function Result(props){
-    return(
-        <div className='result'>
-        <h1>Your result</h1>
+
+  const result = <>
+  <h1>Your result</h1>
         <p>Your results are shown below based on the information you provided. 
           To adjust the results, edit the form and click “calculate repayments” again.
         </p>
-        <div>
           <p>Your monthly repayments</p>
-          <h1> {props.repay}</h1>
-        </div>
-        <div>
+          <h1>£ {props.repay}</h1>
           <p>Total you'll repay over the term</p>
-          <h1> {props.total}</h1>
-        </div>
+          <h1>£ {props.total}</h1>
+  </>
+
+  const empty = <>
+
+    <img src={emptyBusiness} alt="empty business" />
+
+    <h1>Results shown here</h1>
+
+    <p>Complete the form and click “calculate repayments” to see what 
+    your monthly repayments would be.</p>
+  </>
+
+    return(
+        <div className='result'>
+          {(props.total <= 0 && props.repay <= 0) || (props.total == NaN && props.repay == NaN) ? empty : result}
       </div>
     )
 }

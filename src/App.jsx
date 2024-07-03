@@ -7,7 +7,7 @@ function App() {
   
   return (
     <main>
-      <Calc />
+      <Calc setRepay={setRepay} setTotal={setTotal}/>
       <Result repay={repay} total={total}/>
     </main>
   )

@@ -106,5 +106,25 @@ input{
     border-bottom-left-radius: 20%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > p {
+        text-align: center;
+    }
 }
 
+.inputs{
+    > input {
+        width: 85%;
+    }
+}
+
+.container{
+    padding-left: 12px;
+}
+
+.hint{
+    padding: 12px;
+}
