@@ -69,15 +69,21 @@ function Calc(props) {
         <div style={{color:"red"}}>{error_label}</div>
         <div className='tr'>
           <div className='container'>
-            <p>Mortgage term</p>
-            <input type="text" value={term} onChange={(e) => HandleTerm(e)}/>
-            <span className="hint" style={styleHint}>years</span>
+           <div>
+              <p>Mortgage term</p>
+              <input type="text" value={term} onChange={(e) => HandleTerm(e)}/>
+              <span className="hint" style={styleHint}>years</span>
+            </div>
+            <div style={{color:"red"}}>{error_label}</div>
           </div>
           
           <div className='container'>
-            <p>interest rate</p>
-            <input type="text" value={rate} onChange={(e) => HandleRate(e)}/>
-            <span className="hint" style={styleHint}>%</span>
+            <div>
+              <p>interest rate</p>
+              <input type="text" value={rate} onChange={(e) => HandleRate(e)}/>
+              <span className="hint" style={styleHint}>%</span>
+            </div>
+            <div style={{color:"red"}}>{error_label}</div>
           </div>
         </div>
         <p>Mortgage type</p>

@@ -8,6 +8,9 @@
 }
 
 body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
     background-color: hsl(202, 86%, 94%);
 }
 
@@ -127,4 +130,85 @@ input{
 
 .hint{
     padding: 12px;
+}
+
+.money{
+    background-color: rgb(13, 13, 39);
+    padding: 20px;
+    border-top: 1px solid hsl(70, 100%, 68%);
+}
+
+.mcon:first-child{
+    > h1 {
+        color: hsl(70, 100%, 68%);
+    }
+}
+
+.mcon:last-child{
+    border-top: 1px rgb(56, 56, 56) solid;
+    > h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 941px){
+    main{
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    body{
+        margin: 0;
+    }
+
+    .result{
+        max-width: none;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 513px){
+    .tr{
+        flex-direction: column;
+    }
+    .head{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        align-items: first baseline;
+    }
+
+    .container div input{
+        width: 75%;
+    }
+    
+    .container:last-child div input{
+        width: 75%;
+    }
+    
+    button{
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 461px){
+    .inputs input{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container div input{
+        width: 65%;
+    }
+    
+    .container:last-child div input{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 353px){
+    .inputs input {
+        width: 70%;
+    }
 }
